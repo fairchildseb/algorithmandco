@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>algorithm & co. | alchemical web design</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+            $("body").hide();
+            $("body").fadeIn(1500);
+        })
+
+        $(function(){
+            $("body").fadeOut(1500,function(){
+                window.location.href = "about.html"
+            })
+        });
+
+        </script>
+
+
+</head>
+
+<body>
+
+<div class="galaxy">
+
+        <img id = "galaxy" src = images/galaxy.gif>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+/* INDEX */
+
+body {
+    margin: 0;
+}
+
+.logo_wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100vw;
+}
+
+#logo {
+    width: 450px;
+    margin: 0 auto;
+    display: block;
+}
+#index_star {
+    margin: 20px auto;
+    display: block;
+}
+
+.spinning{
+    animation: spin 10s linear infinite;
+    animation-play-state: running;
+
+}
+
+/* Animate star */
+
+@keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+
+@-moz-keyframes spin {
+    100% {transform: rotate(1turn); }
+}
+
+.button{
+    position:absolute;
+    background: url(/images/star.png) top center no-repeat;
+    animation: spin 10s linear infinite;
+    animation-play-state: running;
+}
+
+/* GALAXY */
+
+.galaxy{
+position: fixed;
+display: block;
+top: 50%;
+left: 50%;
+transform: translate(-400px, -250px);
+}
+
+#galaxy{
+width: 800px;
+}
+
+/* ABOUT */
+
+#about{
+position: fixed;
+display: block;
+width: 800px;
+height: 700px;
+top: 50%;
+left: 50%;
+transform: translate(-400px, -350px);
+text-align: center;
+}
+
+h1{
+font-family: Garamond;
+font-size: 52px;
+font-weight: 200;
+}
+
+h2{
+font-family: sans-serif;
+font-weight: 100;
+margin-top: -20px;
+}
+
+p{
+font-family: Garamond;
+}
+
+#contact-form{
+margin: 0 auto;
+}
+
+input[type=submit]{
+background:white;
+color:black;
+height:36px;
+width:137px;
+padding: 0px 7px;
+font-family: sans-serif;
+font-size: 18px;
+font-weight: 100;
+}
+
+
+@-moz-document url-prefix() {
+input[type=submit] {border: 1px solid black;}
+}
+
+input[type="text"] {
+font-size: 14px;
+}
+
+textarea {
+font-size: 14px;
+font-family: sans-serif;
+}
+
+/* CSS for placeholder text */
+
+::-webkit-input-placeholder {
+    text-align:center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 15px;
+    overflow: visible;
+}
+
+textarea::-webkit-input-placeholder {
+    padding-top: 20%;
+    color: black;
+}
+
+::-moz-placeholder {
+    text-align:center;
+    padding-top: 20%;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+textarea::-moz-placeholder {
+    opacity: 1;
+    color: black;
+}
+
+:-moz-placeholder {
+    text-align:center;
+    padding-top: 20%;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+textarea:-moz-placeholder {
+    opacity: 1;
+    color: black;
+}
+
+:-ms-input-placeholder {
+    text-align:center;
+    padding-top: 20%;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+textarea:-ms-input-placeholder {
+    padding-top: 20%;
+    color: black;
+}
+
+/* PHP Responses */
+
+#star-php {
+    position: relative;
+    display: block;
+    left: 46%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: -50px;
+}
+
+.form-error{
+    font-family: Garamond;
+    font-size: 20px;
+    position: fixed;
+    display: block;
+    width: 800px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-400px, -200px);
+    text-align: center;
+}
+
+.form-problem{
+    font-family: Garamond;
+    font-size: 20px;
+    position: fixed;
+    display: block;
+    width: 800px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-400px, -200px);
+    text-align: center;
+}
+
+.form-success{
+    font-family: Garamond;
+    font-size: 20px;
+    position: fixed;
+    display: block;
+    width: 800px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-400px, -200px);
+    text-align: center;
+}
